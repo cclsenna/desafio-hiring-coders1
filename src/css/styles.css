@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 
 
+::placeholder{
+    color: whitesmoke;
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
 body{
     background-color:rgb(25, 26, 99);    
     font-family: 'Source Sans Pro', sans-serif;
@@ -20,21 +29,40 @@ body{
     font-size:1.5em;
     color: tomato;
     line-height: 40px;
-    margin-left:3%;   
-           
+    margin-left:3%;
+    position: relative;           
     }  
-    
 
 .main-header-nav{
-    display: inline-block;
+    color:whitesmoke;
+    position: absolute;
+    right: 1%;
+    top: 1%;
 }
 
-.main-header-list{
-    display:flex;
-    justify-content: flex-end;
-    color:#ff6347;
-    margin-right: 2%;
+.main-header-nav ul{
+    width: 250px;
 }
+
+.main-header-link:visited{
+    text-decoration: none;
+    color:tomato;
+}
+
+.main-header-link:hover{
+    color:white;
+}
+
+.main-header-nav li{
+    display: inline-block;
+    color:tomato;
+}
+
+.headerlink1{
+    margin-right: 5%;
+}
+
+
 
 .link-menu {
     border: 2px solid white;
@@ -43,27 +71,6 @@ body{
     width: fit-content;
 }
     
-    
-.main-header-list li{
-    display:inline-block;
-   align-self: flex-end;
-   
-}
-
-.main-header-list li a{
-    text-decoration: none;
-    padding:0;
-}
-    
-    
-.main-header-list li a:visited{
-    
-    color:whitesmoke;   
-}
-.main-header-list li a:hover{
-    background-color: rgba(255, 255, 255, 2);
-    color:whitesmoke;   
-}
     
 
 
@@ -100,17 +107,17 @@ body{
     font-size:2em;
     margin-bottom: 25px;
     text-align: center;
-
 }
 
 #input_email{
     background-color:#ff6347;
-    color: white;
+    color:whitesmoke;
     height:2em;
     width: 400px;
     margin-right:2%;
     border-radius: 10px;
     border-color: transparent;
+    padding: 0.5rem;
 }
 
 #input_email:focus{
@@ -123,7 +130,7 @@ body{
     height:2.4em;
     width: 100px;
     background-color:whitesmoke;
-    border-radius: 5px;    
+    border-radius: 5px;
 
 }
 
@@ -138,13 +145,17 @@ body{
 
 .cronometro{
     font-size:48px;
-    margin-top:2%;
-    margin-left:40%;
+    /*margin-top:2%;
+    margin-left:40%;*/
     width: 25%;
-    justify-content: space-around;
-    align-items: center;
+    display:flex;
+    justify-content: center;
     flex-wrap: nowrap;
 
+}
+
+.cronometro-container{
+    margin:2% ;
 }
 
 .contador{
@@ -167,22 +178,24 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     color: whitesmoke;
-    margin-bottom: 4%;
+    
 }
 
-.produtos div{
-    text-align: center;
-}
 
 .produtos img{
     height: 300px;
     width: 300px;
     border-radius: 6px;
     font-weight: 400;
-    margin-bottom: 4%;
     
     
 }
+
+.produtos-desc{
+    text-align: center;
+    margin-bottom: 4%;
+}
+
 
 
 .original-price{
@@ -221,5 +234,50 @@ body{
 .fab{
     color:#ff6347;
 }
+
+@media screen and (max-width: 624px) {
+    
+    .main-content-section-article h1{        
+        font-size: 3.0em;       
+    
+    }
+
+    .main-content-section-article h2{
+        font-size:1.5em;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .main-content-section-article p{
+        font-size:1.5em;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+
+    .descritivo{
+        font-size: 1.25em;
+    }
+
+    #input_email{
+        background-color:#ff6347;
+        color:whitesmoke;
+        height:2em;
+        width: 350px;
+        margin-right:2%;
+        margin-bottom: 2%;
+        border-radius: 10px;
+        border-color: transparent;
+        padding: 0.5rem;
+    }
+
+    .main-header-nav{
+        display: none;
+    }
+    
+
+
+  }
+
 
 

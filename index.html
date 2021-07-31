@@ -11,17 +11,23 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="icon" href="https://img.icons8.com/color/48/000000/music--v1.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">  
     <script src="./scripts.js"></script>
 </head>
 
 
 
-<body onload="countdownTimer()">
+<body >
     <header class="main-header">
+        <p class="store-title">Musical Masters</p>
 
-        <p class="store-title">Musical Masters</p>  
+        <nav class="main-header-nav">
+            <ul>
+                <li class="headerlink1"><a href="./index.html" class="main-header-link">Sobre Nós</a></li>
+                <li><a href="./index.html" class="main-header-link">Contato</a></li>
+            </ul>
+
+        </nav>
 
 
     </header>
@@ -40,46 +46,47 @@
 
         <section class='main-content-section'>
             <article class='descritivo'>
-                <p>Cadastre-se já para receber promoções exclusivas de nossa Musical Friday</p>                
+                <h2>Cadastre-se já para receber promoções exclusivas de nossa Musical Friday</h2>                
             </article>                         
         </section>
 
 
-        <section class="main-content-section cronometro">
-            <div class="cronometro-container">
-                <p class="contador-titulo">Dias</p>
-                <p id="contador-d" class="contador"></p>
-            </div>
+        <section class="main-content-section">
+            <article class="cronometro">
+                <div class="cronometro-container">
+                    <p class="contador-titulo">Dias</p>
+                    <p id="contador-d" class="contador"></p>
+                </div>
 
-            <div class="cronometro-container" >
-                <p class="contador-titulo">Horas</p>
-                <p id="contador-h" class="contador"></p>
-            </div>
+                <div class="cronometro-container" >
+                    <p class="contador-titulo">Horas</p>
+                    <p id="contador-h" class="contador"></p>
+                </div>
 
-            <div class="cronometro-container" >
-                <p class="contador-titulo">Minutos</p>
-                <p id="contador-min" class="contador"></p>
-            </div>
+                <div class="cronometro-container" >
+                    <p class="contador-titulo">Minutos</p>
+                    <p id="contador-min" class="contador"></p>
+                </div>
 
-            <div class="cronometro-container" >
-                <p class="contador-titulo">Segundos</p>
-                <p id="contador-sec" class="contador"></p>
-            </div>    
-
+                <div class="cronometro-container" >
+                    <p class="contador-titulo">Segundos</p>
+                    <p id="contador-sec" class="contador"></p>
+                </div>   
+            </article>
 
         
     </section>
 
 
         <section class="produtos">
-            <div>
+            <div class="produtos-desc">
                 <img src="./src/img/pandeiro.jpg" alt="Pandeiro Izzo">
                 <p>Pandeiro Brasil</p>
                 <p class="original-price">R$ 89,90</p>
                 <p>R$ 65,90</p>
             </div>
 
-            <div>
+            <div class="produtos-desc">
                 <img src="./src/img/teclado.jpg" alt="Kit Teclado">
                 <p>Kit Teclado</p>
                 <p class="original-price">R$ 499,90</p>
@@ -87,7 +94,7 @@
 
             </div>
 
-            <div>
+            <div class="produtos-desc">
                 <img src="./src/img/violao.jpg" alt="Violão clássico">
                 <p>Violão Nylon Estudante</p>
                 <p class="original-price">R$ 250,30</p>
@@ -95,7 +102,7 @@
 
             </div>
 
-            <div>
+            <div class="produtos-desc">
                 <img src="./src/img/violao-folk.jpg" alt="Violão Folk">
                 <p>Violão Folk Elétrico</p>
                 <p class="original-price">R$ 650,90</p>

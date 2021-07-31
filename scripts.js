@@ -1,4 +1,6 @@
-var emails=[]
+var emails=[];
+
+
 persistEmail=()=>{
     emails.push(document.getElementById("input_email").value)
     localStorage.setItem("email",emails);
@@ -31,3 +33,5 @@ var x = setInterval(function() {
 }, 1000)
 
 }
+
+window.onload=countdownTimer();
